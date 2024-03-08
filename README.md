@@ -1,16 +1,14 @@
 # book_finder
 
-A new Flutter project.
+A mobile app where you can look for books. Uses Google Book API to fetch book and book information.
 
-## Getting Started
+# Features
 
-This project is a starting point for a Flutter application.
+* Ability to log in using Google
+* Sign out
+* Search for books
+* Get book information for a specific book
+* Infinite scrolling
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# Technologies
+Flutter + Firebase

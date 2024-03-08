@@ -169,7 +169,8 @@ class _BookDetailsPageState extends State<BookDetailsPage> {
                         ),
                       ),
                     Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 10.0),
+                      padding: const EdgeInsets.only(
+                          left: 10.0, right: 10.0, bottom: 20.0),
                       child: Text(description,
                           style: const TextStyle(fontSize: 16.0)),
                     ),

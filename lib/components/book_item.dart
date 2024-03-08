@@ -71,6 +71,7 @@ class BookItem extends StatelessWidget {
                   ),
                   const SizedBox(height: 8.0),
                   Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       const Icon(
                         Icons.star,

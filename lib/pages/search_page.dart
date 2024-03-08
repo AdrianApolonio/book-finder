@@ -40,7 +40,7 @@ class _SearchPageState extends State<SearchPage> {
     if (scrollController.position.pixels ==
             scrollController.position.maxScrollExtent &&
         startIndex < totalItems) {
-      print("loading more books");
+      // print("loading more books");
       // "www.googleapis.com/books/v1/volumes?q="
       Response res = await http.get(Uri.https(authority, unencodedPath, {
         "q": searchQuery,
@@ -134,7 +134,7 @@ class _SearchPageState extends State<SearchPage> {
   Future parseItems(dynamic items) async {
     List<BookItem> newBooks = [];
     for (dynamic item in items) {
-      print(item);
+      // print(item);
 
       BookItem book = BookItem.fromJson(item);
       newBooks.add(book);

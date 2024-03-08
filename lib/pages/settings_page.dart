@@ -32,7 +32,7 @@ class SettingsPage extends StatelessWidget {
             ],
           ),
           TextButton(
-              child: const Text("sign out"), onPressed: () => signOut(context))
+              child: const Text("Sign Out"), onPressed: () => signOut(context))
         ],
       ),
     )));

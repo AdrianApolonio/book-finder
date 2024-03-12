@@ -13,8 +13,9 @@ class BookItem extends StatelessWidget {
       : title = json["volumeInfo"]["title"] ?? "",
         authors = json["volumeInfo"]["authors"] ?? [],
         rating = json["volumeInfo"]["averageRating"] ?? "",
-        thumbnailLink =
-            json["volumeInfo"]["imageLinks"]["smallThumbnail"] ?? "",
+        thumbnailLink = json["volumeInfo"]["imageLinks"] != null
+            ? json["volumeInfo"]["imageLinks"]["smallThumbnail"]
+            : "",
         selfLink = json["selfLink"] ?? "";
 
   /*
@@ -58,7 +59,7 @@ class BookItem extends StatelessWidget {
                     Text(
                       "by ${authors.join(", ")}",
                       overflow: TextOverflow.ellipsis,
-                      style: TextStyle(color: Colors.grey),
+                      style: const TextStyle(color: Colors.grey),
                     ),
                   const SizedBox(height: 8.0),
                   Text(
